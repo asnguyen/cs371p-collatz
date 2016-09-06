@@ -53,9 +53,9 @@ int collatz_eval (int i, int j)
                 ++temp_max;
             }
         }
-        cur_max = max(cur_max,temp_max);
+        cur_max = max(cur_max,temp_max);        //checks to see if the make of K is larger than current max
     }
-    return cur_max;
+    return cur_max;                             //returns max
     //return 1;                     
 }
 
