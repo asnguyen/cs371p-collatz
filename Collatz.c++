@@ -33,8 +33,8 @@ bool collatz_read (istream& r, int& i, int& j) {
 int collatz_eval (int i, int j) 
 {
     // <your code>
-    /*assert( i > 0 && j > 0);                     // check preconditions
-    int max = 0;                                 // the max cycle length between i and j
+    assert( i > 0 && j > 0);                     // check preconditions
+    int cur_max = 0;                                 // the max cycle length between i and j
     int temp_max = 1;                            // the cycle length for a number between i and j
     for(int k = min(i,j); k<= max(i,j); k++)     // iteraties through the numbers between i and j
     {
@@ -53,10 +53,10 @@ int collatz_eval (int i, int j)
                 ++temp_max;
             }
         }
-        max = max(max,temp_max);
+        cur_max = max(cur_max,temp_max);
     }
-    return max;*/
-    return 1;                     
+    return cur_max;
+    //return 1;                     
 }
 
 // -------------
