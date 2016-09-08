@@ -1,6 +1,5 @@
 
 sudo: required
-dist: trusty
 
 language: cpp
 
@@ -13,8 +12,6 @@ addons:
 
 before-install:
     - sudo apt-get update
-    
-sudo: required
 
 install:
     - sudo apt-get install libboost-dev
