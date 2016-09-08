@@ -19,9 +19,6 @@ install:
     - sudo apt-get install valgrind
     - ls -al /usr/src
     - cd /usr/src/gtest
-    - make
-    - cp *.a /usr/lib
-    - cd -
 
 before_script:
     - uname -a
