@@ -1,7 +1,6 @@
 language: cpp
 
 compiler:
-    - clang
     - gcc
 
 sudo: false
@@ -31,7 +30,6 @@ install:
 before_script:
     - uname -a
     - printenv
-    - clang++ --version
     - doxygen --version
     - g++-5 --version
     - gcov-5 --version
