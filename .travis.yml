@@ -28,7 +28,6 @@ before_script:
     - uname -a
     - printenv | sort
     - apt list --installed
-    - make versions
 
 script:
     - date
